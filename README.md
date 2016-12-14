@@ -30,5 +30,6 @@ Now you can use all other functionality provided by this plugin.
 
 ### Init
 
+`init( permissions?:Array<string> )` by this function you can initialize ionic2-fb-api. It takes one optional parameter. Here you can give permissions list which your application require from user to login.
 
 
