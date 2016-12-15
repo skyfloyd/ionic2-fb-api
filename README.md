@@ -10,7 +10,7 @@ $ ionic plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --vari
 ```
 Find more details here [https://ionicframework.com/docs/v2/native/facebook/](https://ionicframework.com/docs/v2/native/facebook/)
   * Copy `ionic2-fb-api` `module` folder to `app` folder
-  * Import `FbModule` to your `@NgModule`
+  * Import `FbModule` to your app base `@NgModule`
   
 Thats all.
 
