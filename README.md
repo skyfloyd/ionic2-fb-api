@@ -74,7 +74,7 @@ Basically you will use this functions to specify `subscribeToStatusChange` funct
 
 `getCurrentSessionKey()` get current user facebook access token
 
-## Current user info
+## User info
 
 `getUserInfo( userId:string, readyFunc:any, funcPar:any=null )` get user facebook info.
 
