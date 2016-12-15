@@ -47,3 +47,17 @@ Basically you will use this functions to specify `subscribeToStatusChange` funct
 `getApiStatus_notSocialUser()` - user doesn't logged in in facebook yet
 
 `getApiStatus_loading()` - api initalization or user authorization is in progress
+
+## Current state
+
+`isApiStatus_default()` - default state
+
+`isApiStatus_appUser()` - user authorized your application
+
+`isApiStatus_notAppUser()` - user doesn't authorize your application yet
+
+`isApiStatus_notSocialUser()` - user doesn't logged in in facebook yet
+
+`isApiStatus_loading()` - api initalization or user authorization is in progress
+
+`isApiStatus_notInit()` - `init` function has not been called yet
