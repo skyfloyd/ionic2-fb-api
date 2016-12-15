@@ -92,7 +92,7 @@ Basically you will use this functions to specify `subscribeToStatusChange` funct
 
 `funcPar` - optional parameters you can set to callback
 
-`next` - by this property you can manage Facebook data pagination. Values: [null] - load first page. [true] - load next page. [false] - load previous page.
+`next` - by this property you can manage Facebook data pagination. Values: **null** - load first page. **true** - load next page. **false** - load previous page.
 
 ## Current user album photos
 
@@ -104,4 +104,4 @@ Basically you will use this functions to specify `subscribeToStatusChange` funct
 
 `funcPar` - optional parameters you can set to callback
 
-`next` - by this property you can manage Facebook data pagination. Values: [null] - load first page. [true] - load next page. [false] - load previous page.
+`next` - by this property you can manage Facebook data pagination. Values: **null** - load first page. **true** - load next page. **false** - load previous page.
