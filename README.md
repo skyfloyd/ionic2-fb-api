@@ -32,6 +32,10 @@ Now you can use all other functionality provided by this plugin.
 
 `init( permissions?:Array<string> )` by this function you can initialize ionic2-fb-api. It takes one optional parameter. Here you can give permissions list which your application require from user to login.
 
+### Login
+
+`login()` by this function application will open Facebook authorization dialog.
+
 ### Subscribe to `ionic2-fb-api` status changes
 
 `subscribeToStatusChange( func:any, status:string=null )` using this function it will call your function each time `ionic2-fb-api` will change it's status. Also it can call your function only for actual status if you will specify second `status` parameter.
@@ -61,3 +65,43 @@ Basically you will use this functions to specify `subscribeToStatusChange` funct
 `isApiStatus_loading()` - api initalization or user authorization is in progress
 
 `isApiStatus_notInit()` - `init` function has not been called yet
+
+## Current user id
+
+`getCurrentUserId()` get current user facebook id
+
+## Current user access token
+
+`getCurrentSessionKey()` get current user facebook access token
+
+## Current user info
+
+`getUserInfo( userId:string, readyFunc:any, funcPar:any=null )` get user facebook info.
+
+`userId` - facebook user id
+
+`readyFunc( response:any, funcPar:any=null )` - callback function
+
+`funcPar` - optional parameters you can set to callback
+
+## Current user album
+
+`getCurrentUserAlbums( readyFunc:any, funcPar:any=null, next:boolean=null )` get current user album
+
+`readyFunc( response:any, funcPar:any=null )` - callback function
+
+`funcPar` - optional parameters you can set to callback
+
+`next` - by this property you can manage Facebook data pagination. Values: [null] - load first page. [true] - load next page. [false] - load previous page.
+
+## Current user album photos
+
+`getAlbumPhotos( albumId:string, readyFunc:any, funcPar:any=null, next:boolean=null )` get current user selected album photos
+
+`albumId` - selected album id
+
+`readyFunc( response:any, funcPar:any=null )` - callback function
+
+`funcPar` - optional parameters you can set to callback
+
+`next` - by this property you can manage Facebook data pagination. Values: [null] - load first page. [true] - load next page. [false] - load previous page.
