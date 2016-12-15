@@ -32,4 +32,6 @@ Now you can use all other functionality provided by this plugin.
 
 `init( permissions?:Array<string> )` by this function you can initialize ionic2-fb-api. It takes one optional parameter. Here you can give permissions list which your application require from user to login.
 
+### Subscribe to `ionic2-fb-api` status changes
 
+`subscribeToStatusChange( func:any, status:string=null )` using this function it will call your function each time `ionic2-fb-api` will change it's status. Also it can call your function only for actual status if you will specify second `status` parameter.
