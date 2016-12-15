@@ -35,3 +35,12 @@ Now you can use all other functionality provided by this plugin.
 ### Subscribe to `ionic2-fb-api` status changes
 
 `subscribeToStatusChange( func:any, status:string=null )` using this function it will call your function each time `ionic2-fb-api` will change it's status. Also it can call your function only for actual status if you will specify second `status` parameter.
+
+#### Statuses
+
+Basically you will use this functions to specify `subscribeToStatusChange` function second `status` parameter.
+
+`SocialApiService.getApiStatus_appUser()` - user authorized your application
+`SocialApiService.getApiStatus_notAppUser()` - user doesn't authorize your application yet
+`getApiStatus_notSocialUser()` - user doesn't logged in in facebook yet
+`getApiStatus_loading()` - api initalization or user authorization is in progress

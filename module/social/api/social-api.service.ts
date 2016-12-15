@@ -5,7 +5,6 @@ import {Facebook} from 'ionic-native';
 import {SocialApiPaginationService} from "./social-api-pagination.service";
 import 'rxjs/add/operator/toPromise';
 import {EventListenerService} from "../../common/event-listener/event-listener.service";
-//import {EventListenerService} from "../../common/common.module";
 
 
 @Injectable()
@@ -65,7 +64,7 @@ export class SocialApiService extends EventListenerService{
     }
 
     //to get the init result you need to subscribeToApiStatusChange
-    public init( initParam:any=null, permissions?:Array<string> ):void{
+    public init( permissions?:Array<string> ):void{
         if( typeof permissions !== "undefined" && permissions !== null ){
             this.appPermissions = permissions;
         }
@@ -79,8 +78,6 @@ export class SocialApiService extends EventListenerService{
                 }).catch((error) => {
                     console.log("FB --- LOGIN STATUS PROBLEM ", JSON.stringify(error));
                 });
-
-                //Facebook.browserInit(initParam[ "key" ], 'v2.1') //or 2.1;
             });
         }
     }
