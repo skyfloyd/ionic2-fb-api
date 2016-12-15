@@ -3,14 +3,15 @@ This is Facebook API cover for Ionic 2
 
 ## Installation
 
-1. Create Ionic project
-2. Install `cordova-plugin-facebook4` by this command 
+  * Create Ionic project
+  * Install `cordova-plugin-facebook4` by this command 
 ```bash
 $ ionic plugin add cordova-plugin-facebook4 --variable APP_ID="123456789" --variable APP_NAME="myApplication"
 ```
 Find more details here [https://ionicframework.com/docs/v2/native/facebook/](https://ionicframework.com/docs/v2/native/facebook/)
-3. Copy `ionic2-fb-api` `module` folder to `app` folder
-4. Import `FbModule` to your `@NgModule`
+  * Copy `ionic2-fb-api` `module` folder to `app` folder
+  * Import `FbModule` to your `@NgModule`
+  
 Thats all.
 
 
