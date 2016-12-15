@@ -41,6 +41,9 @@ Now you can use all other functionality provided by this plugin.
 Basically you will use this functions to specify `subscribeToStatusChange` function second `status` parameter.
 
 `SocialApiService.getApiStatus_appUser()` - user authorized your application
+
 `SocialApiService.getApiStatus_notAppUser()` - user doesn't authorize your application yet
+
 `getApiStatus_notSocialUser()` - user doesn't logged in in facebook yet
+
 `getApiStatus_loading()` - api initalization or user authorization is in progress
